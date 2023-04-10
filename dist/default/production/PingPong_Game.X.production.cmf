@@ -1,0 +1,267 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Ping_Pong_Game.o
+Programa CODE 0 0 0 98 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM C-4D 1
+BANK0 C-4D 1
+CONST 98-3FF 2
+ENTRY 98-3FF 2
+IDLOC 2000-2003 2
+CODE 98-3FF 2
+EEDATA 2100-213F 2
+STRCODE 98-3FF 2
+STRING 98-3FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Ping_Pong_Game.o
+0 Programa CODE >11:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+0 Programa CODE >22:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1 Programa CODE >27:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2 Programa CODE >28:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3 Programa CODE >30:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4 Programa CODE >31:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5 Programa CODE >32:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6 Programa CODE >35:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7 Programa CODE >36:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8 Programa CODE >37:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+9 Programa CODE >38:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+A Programa CODE >39:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+B Programa CODE >43:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+C Programa CODE >45:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+D Programa CODE >46:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+E Programa CODE >47:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+F Programa CODE >48:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+10 Programa CODE >49:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+11 Programa CODE >50:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+12 Programa CODE >51:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+13 Programa CODE >54:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+14 Programa CODE >55:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+15 Programa CODE >56:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+16 Programa CODE >57:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+17 Programa CODE >58:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+18 Programa CODE >59:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+19 Programa CODE >60:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1A Programa CODE >63:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1B Programa CODE >64:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1C Programa CODE >65:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1D Programa CODE >66:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1E Programa CODE >67:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+1F Programa CODE >68:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+20 Programa CODE >69:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+21 Programa CODE >70:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+22 Programa CODE >73:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+23 Programa CODE >74:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+24 Programa CODE >75:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+25 Programa CODE >76:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+26 Programa CODE >77:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+27 Programa CODE >78:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+28 Programa CODE >79:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+29 Programa CODE >80:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2A Programa CODE >84:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2B Programa CODE >85:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2C Programa CODE >86:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2D Programa CODE >87:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2E Programa CODE >88:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+2F Programa CODE >89:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+30 Programa CODE >92:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+31 Programa CODE >93:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+32 Programa CODE >94:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+33 Programa CODE >96:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+34 Programa CODE >98:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+35 Programa CODE >101:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+36 Programa CODE >102:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+37 Programa CODE >103:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+38 Programa CODE >106:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+39 Programa CODE >107:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3A Programa CODE >108:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3B Programa CODE >110:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3C Programa CODE >111:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3D Programa CODE >114:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3E Programa CODE >115:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+3F Programa CODE >116:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+40 Programa CODE >118:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+41 Programa CODE >119:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+42 Programa CODE >120:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+43 Programa CODE >121:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+44 Programa CODE >122:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+45 Programa CODE >125:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+46 Programa CODE >126:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+47 Programa CODE >127:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+48 Programa CODE >128:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+49 Programa CODE >129:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4A Programa CODE >132:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4B Programa CODE >133:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4C Programa CODE >134:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4D Programa CODE >135:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4E Programa CODE >136:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+4F Programa CODE >139:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+50 Programa CODE >140:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+51 Programa CODE >141:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+52 Programa CODE >142:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+53 Programa CODE >143:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+54 Programa CODE >146:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+55 Programa CODE >147:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+56 Programa CODE >148:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+57 Programa CODE >149:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+58 Programa CODE >150:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+59 Programa CODE >154:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5A Programa CODE >155:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5B Programa CODE >156:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5C Programa CODE >157:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5D Programa CODE >158:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5E Programa CODE >161:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+5F Programa CODE >162:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+60 Programa CODE >163:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+61 Programa CODE >164:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+62 Programa CODE >167:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+63 Programa CODE >168:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+64 Programa CODE >171:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+65 Programa CODE >172:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+66 Programa CODE >173:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+67 Programa CODE >174:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+68 Programa CODE >177:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+69 Programa CODE >178:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6A Programa CODE >181:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6B Programa CODE >182:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6C Programa CODE >183:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6D Programa CODE >184:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6E Programa CODE >185:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+6F Programa CODE >186:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+70 Programa CODE >187:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+71 Programa CODE >189:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+72 Programa CODE >190:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+73 Programa CODE >191:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+74 Programa CODE >193:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+75 Programa CODE >194:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+76 Programa CODE >195:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+77 Programa CODE >197:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+78 Programa CODE >198:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+79 Programa CODE >199:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7A Programa CODE >203:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7B Programa CODE >204:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7C Programa CODE >206:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7D Programa CODE >207:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7E Programa CODE >209:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+7F Programa CODE >210:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+80 Programa CODE >212:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+81 Programa CODE >213:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+82 Programa CODE >215:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+83 Programa CODE >216:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+84 Programa CODE >218:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+85 Programa CODE >219:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+86 Programa CODE >220:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+87 Programa CODE >224:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+88 Programa CODE >225:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+89 Programa CODE >227:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8A Programa CODE >228:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8B Programa CODE >230:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8C Programa CODE >231:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8D Programa CODE >233:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8E Programa CODE >234:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+8F Programa CODE >236:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+90 Programa CODE >237:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+91 Programa CODE >239:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+92 Programa CODE >240:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+93 Programa CODE >241:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+94 Programa CODE >244:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+95 Programa CODE >245:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+96 Programa CODE >246:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+97 Programa CODE >247:D:\ICO9\Zola\PingPong\PingPong_Game.X\Ping_Pong_Game.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 98 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 4010 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lconfig 0 0 CONFIG 4 config -
+__LPrograma 0 0 ABS 0 Programa -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__HPrograma 0 0 ABS 0 Programa -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
